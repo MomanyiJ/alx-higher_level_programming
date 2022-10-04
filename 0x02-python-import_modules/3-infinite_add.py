@@ -4,4 +4,4 @@ if __name__ == "__main__":
     add = 0
     for num in argv[1:]:
         add += int(num)
-        print("{:d}".format(add))
+    print("{:d}".format(add))
