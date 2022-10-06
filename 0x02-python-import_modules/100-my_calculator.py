@@ -14,5 +14,5 @@ if __name__ == "__main__":
             print("{} {} {} = {}".format(a, s, b, funcs[i](a, b)))
             break
     else:
-        print("Unkown operator. Available operators:+,-,* and /")
+        print("Unkown operator. Available operators: +,-,* and /")
         quit(1)
