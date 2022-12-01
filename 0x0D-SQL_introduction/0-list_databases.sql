@@ -1,3 +1,2 @@
---lists all databases in MySQl server
-
+--lists all databases in MySQl server.
 SHOW DATABASES;
