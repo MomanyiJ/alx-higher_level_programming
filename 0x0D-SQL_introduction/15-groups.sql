@@ -3,4 +3,4 @@
 -- list should be by the number of records (descendeing)
 -- The DB name will be passed as an arg to the mysql command
 
-SELECT AVG(score) As average FROM second_table;
+SELECT score, COUNT(*) as number FROM second_table GROUP BY score ORDER BY number DESC;
