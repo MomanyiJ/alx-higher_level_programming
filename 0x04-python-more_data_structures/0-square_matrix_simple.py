@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    return [list(map((lambda x: x * x)), ele) for ele in matrix]
+    return [x**2 for x in range(10)]
