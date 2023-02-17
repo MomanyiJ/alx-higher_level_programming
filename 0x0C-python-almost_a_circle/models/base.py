@@ -2,6 +2,8 @@
 ''' Base clase module '''
 
 import json
+import csv
+import turtle
 
 
 
