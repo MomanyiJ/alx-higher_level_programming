@@ -7,5 +7,3 @@ class Square:
     def __init__(self, size):
         """ initializes the data """
         self.__size = size
-
-
