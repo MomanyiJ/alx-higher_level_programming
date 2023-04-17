@@ -11,11 +11,11 @@ if __name__ == "__main__":
     # s denotes variable named script
     s = f"SELECT cities.id, cities.name, states.name {'FROM cities'}{
             'LEFT OUTER JOIN states ON cities.state_id=states.id'}
-{'ORDER BY cities.id ASC}"
+        {'ORDER BY cities.id ASC}"
     cur.execute(s)
     data = cur.fetchall()
     for row in data:
         print(row)
 
     cur.close()
-    database.close()
+    db.close()
