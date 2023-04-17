@@ -9,7 +9,7 @@ if __name__ == "__main__":
     curr = db.cursor()
     # variable named add is to help with pycodestyle length on curr.execute()
     add = 'SELECT * FROM states WHERE name LIKE BINARY"N%" ORDER BY id ASC'
-    curr.execute(connect_query)
+    curr.execute(add)
     data = curr.fetchall()
     for state in data:
         print(state)
