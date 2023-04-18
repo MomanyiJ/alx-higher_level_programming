@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script taking state name as 
+""" script taking state name as
 argument lisitng all cities of that state from
  hbtn_0e_4_usa """
 
@@ -22,5 +22,3 @@ if __name__ == "__main__":
 
     cur.close()
     db.close()
-
-
