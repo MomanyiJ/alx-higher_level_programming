@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" 
+Script lisiting State Objects from the DB hbtn_0e_6_usa
+"""
 
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
