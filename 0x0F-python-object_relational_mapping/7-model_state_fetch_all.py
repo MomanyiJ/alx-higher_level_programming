@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 from sys import argv
+from sqlalchemy import create_engine
 
 if __name__ == "__main__":
     # assigning variables
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
                             .format(username, password, database),
                             pool_pre_ping=True)
-    Base.metadata.create_all(engine)
+    # Base.metadata.create_all(engine)
 
     # session creation
     Session = sessionmaker(bind=engine)
