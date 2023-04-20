@@ -29,6 +29,6 @@ if __name__ == "__main__":
 
     # print stae ID or not found if it does not exist
     if results is None:
-        print("Not Found!")
+        print("Not Found")
     else:
         print(results.id)
