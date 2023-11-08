@@ -1,0 +1,24 @@
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+# Test cases
+
+# Test case 1: First and last name given
+
+    >>> say_my_name("John", "Doe")
+    My name is John Doe
+
+# Test case 2: Only first name given
+
+    >>> say_my_name("Jane")
+    My name is Jane 
+
+# Test case 3: First name is not a string
+
+    >>> say_my_name(123, "Doe")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+# Test case 4: Last name is not a string
+    >>> say_my_name("John", 123)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
