@@ -1,0 +1,72 @@
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+    >>> text_indentation("Me?")
+    Me?
+    <BLANKLINE>
+
+Check:
+
+    >>> text_indentation("   Hi there.")
+    Hi there.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("          ")
+
+Similarly, no spaces are printed at the end of each printed line.
+
+::
+
+    >>> text_indentation("Hello.   ")
+    Hello.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("    Hey.    You.   ")
+    Hey.
+    <BLANKLINE>
+    You.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("Just, me")
+    Just, me
+
+::
+
+    >>> text_indentation("Print and Printing:\nPrinted.")
+    Print and Printing:
+    <BLANKLINE>
+    <BLANKLINE>
+    Printed.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("\n\n Me.")
+    <BLANKLINE>
+    <BLANKLINE>
+    Me.
+    <BLANKLINE>
+
+Invalid Text
+------------
+::
+
+    >>> text_indentation(2)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation({"one": 1, "two": 2})
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
