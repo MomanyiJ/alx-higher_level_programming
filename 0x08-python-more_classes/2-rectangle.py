@@ -10,7 +10,8 @@ class Rectangle:
 
         Args:
             width (int, optional): The width of the rectangle. Defaults to 0
-            height (int, optional): The height of the rectangle> Defaults to 0"""
+            height (int, optional): The height of the rectangle Defaults to 0
+            """
 
         self.width = width
         self.height = height
@@ -50,4 +51,3 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         return (self.__height + self.__width) * 2
-
