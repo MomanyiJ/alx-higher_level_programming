@@ -53,7 +53,7 @@ class Rectangle:
         """int: perimeter of a rectangle"""
         if self.__height == 0 or self.__width == 0:
             return 0
-        return(self.__height + self.__width) * 2
+        return (self.__height + self.__width) * 2
 
     def __str__(self):
         """Return the printable representation of the Rectangle."""
