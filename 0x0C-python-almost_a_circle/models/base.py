@@ -87,7 +87,7 @@ class Base:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 for i in list_objs:
                     writer.writerow(i.to_dictionary())
-    
+
     @classmethod
     def load_from_file_csv(cls):
         """Return a list"""
@@ -100,7 +100,7 @@ class Base:
                     fieldnames = ["id", "size", "x", "y"]
                 list_dicts = csv.DictReader(csvfile, fieldnames=fieldnames)
                 list_dicts = [dict([k, int(v)] for k, v in d.items())
-                                for d in list_dicts]
+                              for d in list_dicts]
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
-                return []
+            return []
